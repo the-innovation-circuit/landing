@@ -27,9 +27,9 @@ function MyApp({ Component, pageProps }) {
             sx={{ fontSize: "12px", flexGrow: 1, textAlign: ["left", "right"], mt: [2, 0], transform: ['', 'translateY(-2px)'] }}
             as="p"
           >
-            <span style={{ background: "#43326F", padding: "2px 6px" }}>
+            <a href="https://vercel.com?utm_source=innovation-circuit&utm_campaign=oss" style={{ background: "#43326F", padding: "2px 6px" }}>
               Powered by ▲ Vercel
-            </span>
+            </a>
           </Text>
         </Box>
       </Container>
