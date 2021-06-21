@@ -1,4 +1,4 @@
-# 🦾 the-innovation-circuit
+# Landing Page
 
 Bringing STEM resources to  the students that need them. Our landing page built with Next.js & Theme UI.
 
