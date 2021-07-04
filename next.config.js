@@ -19,4 +19,13 @@ module.exports = {
         },
       ]
     },
+    async redirects() {
+      return [
+        {
+          source: '/media',
+          destination: 'https://github.com/the-innovation-circuit/media',
+          permanent: true,
+        },
+      ]
+    },
   }
