@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Image({src, width, height}) {
   return (
-    <a href={src}>
+    <a href={src} style={{width, height}}>
       <NextImage
         width={width}
         height={height}
