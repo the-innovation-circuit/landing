@@ -1,7 +1,19 @@
 import Head from "next/head";
-import Image from "next/image";
+import NextImage from "next/image";
 import { Container, Heading, Grid, Text, Box } from "theme-ui";
 import Link from "next/link";
+
+function Image({src, width, height}) {
+  return (
+    <a href={src}>
+      <NextImage
+        width={width}
+        height={height}
+        src={src}
+      />
+    </a>
+  )
+}
 
 export default function Home() {
   return (
