@@ -130,7 +130,8 @@ export default async (req, res) => {
       body{
         font-family: 'Fira Sans', sans-serif!important;
         color: white!important;
-        background: #674ea7ff!important;
+        background-color: #e8e0cc!important;
+        background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png")!important;
       }
       h1, h2, h3, .heading, .stat__value, .brand-sans {
         font-family: 'Fira Sans', sans-serif!important;
