@@ -1,9 +1,84 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import Head from "next/head";
+import { Container, Heading, Grid, Text, Flex, Box, Image } from "theme-ui";
+import BGImg from "../components/bg-img";
+export default function Finances({html}) {
+  return (
+    <div>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>The Innovation Circuit</title>
+        <meta name="title" content="The Innovation Circuit" />
+        <meta
+          name="description"
+          content="Bringing STEM resources to the students that need them."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="The Innovation Circuit" />
+        <meta
+          property="og:description"
+          content="Bringing STEM resources to the students that need them."
+        />
+        <meta
+          property="og:image"
+          content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Innovation Circuit" />
+        <meta
+          property="twitter:description"
+          content="Bringing STEM resources to the students that need them."
+        />
+        <meta
+          property="twitter:image"
+          content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
+        />
+      </Head>
+      <Box
+        dangerouslySetInnerHTML={{__html:html}}
+      />
+      <style>
+        {`
+        body{
+          height: 100vh!important;
+        }
+        `}
+      </style>
+    </div>
+  );
+}
 
-export default async (req, res) => {
+const old = (old) => (
+  <Flex
+    sx={{
+      position: "relative",
+      zIndex: 1,
+      p: 4,
+      alignItems: "center",
+      minHeight: "100vh",
+    }}
+  >
+    <Box sx={{ maxWidth: "800px" }}>
+      <Heading as="h1" sx={{ fontSize: 6, textShadow: "elevated" }}>
+        Make Your School a{" "}
+        <Text sx={{ fontSize: 7, textDecoration: "underline" }}>
+          School of Makers
+        </Text>
+      </Heading>
+      <Text as="div" my={[0, 0, 0]} variant="lead">
+        Innovation Circuit events bring a school alive in a way unlike anything
+        else, through a combination of making, food, stickers and more our
+        events unleash the maker spirit of every student. If you're a student
+        and would like to bring this to your school, we'll give you all the
+        resources you need from pizza to workshops to make the perfect event.
+      </Text>
+    </Box>
+  </Flex>
+);
+
+export async function getServerSideProps(ctx) {
   let html = await fetch(
     `https://bank.hackclub.com/the-innovation-circuit${
-      req.query.page ? "?page=" + req.query.page : ""
+      ctx.query.page ? "?page=" + ctx.query.page : ""
     }`
   ).then((r) => r.text());
   html = html.replace(
@@ -93,6 +168,13 @@ export default async (req, res) => {
         border-bottom-width: 0px!important;
       }
 
+      .avatar-grow {
+        display: none;
+      }
+
+      .pop{
+        display: none!important;
+      }
 
       .shade-red, .transaction--negative {
         background-color: rgba(236,55,80,0.625)!important;
@@ -124,12 +206,15 @@ export default async (req, res) => {
               border-bottom: none;
               padding-left: 0px!important;
             }
+
+
       
       body{
         font-family: 'Fira Sans', sans-serif!important;
         color: black!important;
         background-color: #e8e0cc!important;
         background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png")!important;
+        height: 100vh!important;
       }
       h1, h2, h3, .heading, .stat__value, .brand-sans {
         font-family: 'Fira Sans', sans-serif!important;
@@ -147,5 +232,5 @@ export default async (req, res) => {
     </style>
     <head><meta charset='utf-8'>`
   );
-  res.send(html);
-};
+  return { props: { html } };
+}

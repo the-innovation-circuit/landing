@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 export default function Home() {
   return (
     <div>
-      <Container sx={{ maxWidth: ["800px", "800px", "800px"], py: "24px", px: "24px" }}>
+      <Container sx={{ px: "0px" }}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <title>Photos of Innovation Circuit Events</title>
@@ -50,47 +50,14 @@ export default function Home() {
         <Heading
           as="h1"
           sx={{
-            backgroundColor: "#fff",
-            color: "#674ea7ff",
-            width: "calc(100% + 36px)",
             textAlign: "left",
             fontSize: ["2.5em", "3em", "3em"],
             margin: "auto",
             marginTop: ["0px", "18px", "18px"],
             py: "4px",
-            px: "16px",
-            ml: "-18px",
           }}
         >
-          <Grid columns={2}>
-            <span>Photos</span>
-            <Box
-              sx={{
-                alignItems: "center",
-                justifyContent: "right",
-                display: "flex",
-                paddingRight: "8px",
-              }}
-            >
-              <Link href="/">
-                <Text
-                  sx={{
-                    verticalAlign: "middle",
-                    fontSize: "0.5em",
-                    textAlign: "right",
-                    fontWeight: "500",
-                    width: "100%",
-                    cursor: "pointer",
-                  }}
-                >
-                  <Text sx={{ display: ["none", "inline", "inline"] }}>
-                    the Innovation Circuit
-                  </Text>
-                  <Text sx={{ display: ["inline", "none", "none"] }}>Home</Text>
-                </Text>
-              </Link>
-            </Box>
-          </Grid>
+         Photos
         </Heading>
         <Text as="p" sx={{ fontSize: "18px", my: "16px" }}>
           It's hard for us to put the vibe of an Innovation Circuit event in

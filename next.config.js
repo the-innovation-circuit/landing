@@ -11,14 +11,6 @@ module.exports = {
         },
       ]
     },
-    async rewrites() {
-      return [
-        {
-          source: '/finances',
-          destination: '/api/finances',
-        },
-      ]
-    },
     async redirects() {
       return [
         {
