@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Container, Heading, Grid, Text, Box } from "theme-ui";
-import Link from "next/link";
-import Footer from "../components/footer";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -112,7 +111,6 @@ export default function Home() {
             src="https://cloud-qmweg7d8y-hack-club-bot.vercel.app/5screenshot_2021-04-05_at_7.22.11_pm.png"
           />
         </Grid>
-        <Footer />
         <style>{`img{object-fit: cover;}`}</style>
       </Container>
     </div>

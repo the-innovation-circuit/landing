@@ -4,6 +4,7 @@ import { Container, Box, ThemeProvider } from "theme-ui";
 import BGImg from "../components/bg-img";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Footer from "../components/footer";
 
 const navRoutes = [
   { path: "/", label: "Welcome Letter" },
@@ -75,7 +76,9 @@ function MyApp({ Component, pageProps }) {
         >
           <Component {...pageProps} />
         </Container>
+        <Footer />
       </Box>
+
       <BGImg
         gradient="linear-gradient(rgba(51, 37, 87,0.7), rgba(51, 37, 87,0.95))"
         src="https://cloud-okol6b1vm-hack-club-bot.vercel.app/0gems_innovation_week-2763-min.jpg"
@@ -88,6 +91,7 @@ function MyApp({ Component, pageProps }) {
         }
         `}
       </style>
+      
     </ThemeProvider>
   );
 }

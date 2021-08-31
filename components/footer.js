@@ -1,10 +1,9 @@
-import { Box, Text } from "theme-ui";
+import { Box, Text, Link } from "theme-ui";
 
 export default function Footer() {
   return (
     <Box
-      columns={2}
-      sx={{ alignContent: "center", display: ["block", "flex"] }}
+      sx={{ alignContent: "center", display: "block", color: 'white', textAlign: 'center', mt: 3 }}
     >
       <Text
         as="p"
@@ -21,18 +20,19 @@ export default function Footer() {
         sx={{
           fontSize: "12px",
           flexGrow: 1,
-          textAlign: ["left", "right"],
-          mt: [2, 0],
+          textAlign: "center",
+          mt: 3,
           transform: ["", "translateY(-2px)"],
         }}
         as="p"
       >
-        <a
+        <Link
           href="https://vercel.com?utm_source=innovation-circuit&utm_campaign=oss"
-          style={{ background: "#43326F", padding: "2px 6px" }}
+          sx={{ background: "#e8e0cc", backgroundImage:
+          "url(https://www.transparenttextures.com/patterns/beige-paper.png)", padding: "4px 8px", color: "black", textDecoration: 'none', borderRadius: 2 }}
         >
           Powered by ▲ Vercel
-        </a>
+        </Link>
       </Text>
     </Box>
   );
