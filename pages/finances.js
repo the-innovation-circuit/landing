@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Container, Heading, Grid, Text, Flex, Box, Image } from "theme-ui";
 import BGImg from "../components/bg-img";
-export default function Finances({html}) {
+export default function Finances({ html }) {
   return (
     <div>
       <Head>
@@ -33,9 +33,7 @@ export default function Finances({html}) {
           content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
         />
       </Head>
-      <Box
-        dangerouslySetInnerHTML={{__html:html}}
-      />
+      <Box dangerouslySetInnerHTML={{ __html: html }} />
       <style>
         {`
         body{
@@ -103,6 +101,7 @@ export async function getServerSideProps(ctx) {
     new RegExp("/the-innovation-circuit?page=", "g"),
     "/finances?page="
   );
+  html = html.replace('<meta name="theme-color" content="#ec3750">', "");
   html = html.replace(
     '<a href="/the-innovation-circuit">&laquo; First</a>',
     '<a href="/api/finances">« First</a>'
