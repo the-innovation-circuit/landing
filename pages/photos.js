@@ -50,15 +50,13 @@ export default function Home() {
           as="h1"
           sx={{
             textAlign: "left",
-            fontSize: ["2.5em", "3em", "3em"],
             margin: "auto",
             marginTop: ["0px", "18px", "18px"],
-            py: "4px",
           }}
         >
-         Photos
+         Photos of the Innovation Circuit
         </Heading>
-        <Text as="p" sx={{ fontSize: "18px", my: "16px" }}>
+        <Text as="p" sx={{  mt: "8px", mb: '12px' }}>
           It's hard for us to put the vibe of an Innovation Circuit event in
           words, so here are some photos from Innovation Week (the predecessor
           to the Innovation Circuit) that capture the atmosphere of an

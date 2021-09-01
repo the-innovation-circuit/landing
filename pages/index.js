@@ -127,31 +127,3 @@ export default function Home() {
     </div>
   );
 }
-
-const old = (old) => (
-  <Flex
-    sx={{
-      position: "relative",
-      zIndex: 1,
-      p: 4,
-      alignItems: "center",
-      minHeight: "100vh",
-    }}
-  >
-    <Box sx={{ maxWidth: "800px" }}>
-      <Heading as="h1" sx={{ fontSize: 6, textShadow: "elevated" }}>
-        Make Your School a{" "}
-        <Text sx={{ fontSize: 7, textDecoration: "underline" }}>
-          School of Makers
-        </Text>
-      </Heading>
-      <Text as="div" my={[0, 0, 0]} variant="lead">
-        Innovation Circuit events bring a school alive in a way unlike anything
-        else, through a combination of making, food, stickers and more our
-        events unleash the maker spirit of every student. If you're a student
-        and would like to bring this to your school, we'll give you all the
-        resources you need from pizza to workshops to make the perfect event.
-      </Text>
-    </Box>
-  </Flex>
-);

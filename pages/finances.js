@@ -1,5 +1,14 @@
 import Head from "next/head";
-import { Container, Heading, Grid, Text, Flex, Box, Image } from "theme-ui";
+import {
+  Container,
+  Heading,
+  Grid,
+  Text,
+  Flex,
+  Box,
+  Image,
+  Link,
+} from "theme-ui";
 import BGImg from "../components/bg-img";
 export default function Finances({ html }) {
   return (
@@ -33,7 +42,26 @@ export default function Finances({ html }) {
           content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
         />
       </Head>
-      <Box dangerouslySetInnerHTML={{ __html: html }} />
+      <Heading sx={{ mt: 3 }}>Support the Innovation Circuit</Heading>
+      <Text as="p" sx={{ mt: "8px" }}>
+        To provide students in Singapore the best first exposure to STEM &
+        computer science, we rely on the kind donations of companies and
+        individuals. A{" "}
+        <Link
+          href="https://bank.hackclub.com/donations/start/the-innovation-circuit"
+          sx={{ bg: "black", color: "white!important", px: '2px', textDecoration: 'none', border: '1.5px solid', borderColor: 'black', '&:hover': {bg: "rgba(0, 0, 0, 0)", color: "black!important",} }}
+        >
+          monetary donation
+        </Link>{" "}
+        would be highly appreciated. If you'd like to support in an other way,
+        we'd equal appreciate that and would love to <Link
+          href="mailto:contact@innovationcircuit.co"
+          sx={{ bg: "black", color: "white!important", px: '2px', textDecoration: 'none', border: '1.5px solid', borderColor: 'black', '&:hover': {bg: "rgba(0, 0, 0, 0)", color: "black!important",} }}
+        >
+          hear from you
+        </Link>.
+      </Text>
+      <Box dangerouslySetInnerHTML={{ __html: html }} sx={{ mb: 3 }} />
       <style>
         {`
         body{
@@ -44,34 +72,6 @@ export default function Finances({ html }) {
     </div>
   );
 }
-
-const old = (old) => (
-  <Flex
-    sx={{
-      position: "relative",
-      zIndex: 1,
-      p: 4,
-      alignItems: "center",
-      minHeight: "100vh",
-    }}
-  >
-    <Box sx={{ maxWidth: "800px" }}>
-      <Heading as="h1" sx={{ fontSize: 6, textShadow: "elevated" }}>
-        Make Your School a{" "}
-        <Text sx={{ fontSize: 7, textDecoration: "underline" }}>
-          School of Makers
-        </Text>
-      </Heading>
-      <Text as="div" my={[0, 0, 0]} variant="lead">
-        Innovation Circuit events bring a school alive in a way unlike anything
-        else, through a combination of making, food, stickers and more our
-        events unleash the maker spirit of every student. If you're a student
-        and would like to bring this to your school, we'll give you all the
-        resources you need from pizza to workshops to make the perfect event.
-      </Text>
-    </Box>
-  </Flex>
-);
 
 export async function getServerSideProps(ctx) {
   let html = await fetch(
@@ -204,6 +204,7 @@ export async function getServerSideProps(ctx) {
               margin-bottom: 12px!important;
               border-bottom: none;
               padding-left: 0px!important;
+              display: none!important;
             }
 
 
