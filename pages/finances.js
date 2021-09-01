@@ -37,26 +37,26 @@ export default function Finances({ html }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>The Innovation Circuit</title>
-        <meta name="title" content="The Innovation Circuit" />
+        <meta name="title" content="Donate to the Innovation Circuit" />
         <meta
           name="description"
-          content="Bringing STEM resources to the students that need them."
+          content="Help us bring STEM resources to the students that need them in Singapore."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="The Innovation Circuit" />
+        <meta property="og:title" content="Donate to the Innovation Circuit" />
         <meta
           property="og:description"
-          content="Bringing STEM resources to the students that need them."
+          content="Help us bring STEM resources to the students that need them in Singapore."
         />
         <meta
           property="og:image"
           content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="The Innovation Circuit" />
+        <meta property="twitter:title" content="Donate to the Innovation Circuit" />
         <meta
           property="twitter:description"
-          content="Bringing STEM resources to the students that need them."
+          content="Help us bring STEM resources to the students that need them in Singapore."
         />
         <meta
           property="twitter:image"
