@@ -74,6 +74,10 @@ export default function Finances({ html }) {
 }
 
 export async function getServerSideProps(ctx) {
+  ctx.res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  )
   let html = await fetch(
     `https://bank.hackclub.com/the-innovation-circuit${
       ctx.query.page ? "?page=" + ctx.query.page : ""
