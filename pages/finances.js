@@ -36,7 +36,7 @@ export default function Finances({ html }) {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>The Innovation Circuit</title>
+        <title>Donate to the Innovation Circuit</title>
         <meta name="title" content="Donate to the Innovation Circuit" />
         <meta
           name="description"
@@ -179,6 +179,18 @@ export async function getServerSideProps(ctx) {
   html = html.replace(
     new RegExp("/the-innovation-circuit?page=", "g"),
     "/finances?page="
+  );
+  html = html.replace(
+    new RegExp("<meta", "g"),
+    "<heta"
+  );
+  html = html.replace(
+    new RegExp("<title", "g"),
+    "<hitle style='display: none'"
+  );
+  html = html.replace(
+    new RegExp("</title", "g"),
+    "</hitle"
   );
   html = html.replace(
     new RegExp("/the-innovation-circuit?page=", "g"),
