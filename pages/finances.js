@@ -10,6 +10,27 @@ import {
   Link,
 } from "theme-ui";
 import BGImg from "../components/bg-img";
+
+function SupporterImage({ src, sx, ...props }) {
+  return (
+    <Image
+      src={src}
+      sx={{
+        height: "50px",
+        minWidth: '1px',
+        maxWidth: 'none',
+        bg: "white",
+        p: "6px",
+        borderRadius: 6,
+        mr: 2,
+        mt: 2,
+        ...sx,
+      }}
+      {...props}
+    />
+  );
+}
+
 export default function Finances({ html }) {
   return (
     <div>
@@ -42,25 +63,83 @@ export default function Finances({ html }) {
           content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
         />
       </Head>
-      <Heading sx={{ mt: 3 }}>Support the Innovation Circuit</Heading>
+      <Heading sx={{ mt: 3, px: '0px' }}>Support the Innovation Circuit</Heading>
       <Text as="p" sx={{ mt: "8px" }}>
         To provide students in Singapore the best first exposure to STEM &
         computer science, we rely on the kind donations of companies and
         individuals. A{" "}
         <Link
           href="https://bank.hackclub.com/donations/start/the-innovation-circuit"
-          sx={{ bg: "black", color: "white!important", px: '2px', textDecoration: 'none', border: '1.5px solid', borderColor: 'black', '&:hover': {bg: "rgba(0, 0, 0, 0)", color: "black!important",} }}
+          sx={{
+            bg: "black",
+            color: "white!important",
+            px: "2px",
+            textDecoration: "none",
+            border: "1.5px solid",
+            borderColor: "black",
+            "&:hover": { bg: "rgba(0, 0, 0, 0)", color: "black!important" },
+          }}
         >
           monetary donation
         </Link>{" "}
         would be highly appreciated. If you'd like to support in an other way,
-        we'd equal appreciate that and would love to <Link
+        we'd equal appreciate that and would love to{" "}
+        <Link
           href="mailto:contact@innovationcircuit.co"
-          sx={{ bg: "black", color: "white!important", px: '2px', textDecoration: 'none', border: '1.5px solid', borderColor: 'black', '&:hover': {bg: "rgba(0, 0, 0, 0)", color: "black!important",} }}
+          sx={{
+            bg: "black",
+            color: "white!important",
+            px: "2px",
+            textDecoration: "none",
+            border: "1.5px solid",
+            borderColor: "black",
+            "&:hover": { bg: "rgba(0, 0, 0, 0)", color: "black!important" },
+          }}
         >
           hear from you
-        </Link>.
+        </Link>
+        .
       </Text>
+      <Heading as="h3" sx={{ mt: 3, px: 0 }}>
+        Thanks to these kind supporters
+      </Heading>
+      <Flex sx={{flexWrap: 'wrap'}}>
+        <SupporterImage
+          src="https://www.ibo.org/Assets/Images/logo-163.svg"
+          sx={{
+            bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://www.finsmes.com/wp-content/uploads/2020/04/vercel.png"
+          sx={{
+            bg: "snow",
+            filter: 'invert(100%)'
+          }}
+        />
+        <SupporterImage
+          src="https://scontent.fsin9-1.fna.fbcdn.net/v/t1.18169-9/cp0/e15/q65/p320x320/539226_10151006077389794_1622377941_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7aed08&_nc_ohc=g9UkemISGl0AX9BmHVv&_nc_ht=scontent.fsin9-1.fna&oh=d10d2581735db582885999f571aa1b0a&oe=61531E63"
+          sx={{
+            bg: "#F46523",
+            p: '1px'
+          }}
+        />
+        <SupporterImage
+          src="https://upload.wikimedia.org/wikipedia/commons/0/02/Github.com-SunghanKim.png"
+          sx={{
+            bg: "black",
+          }}
+        />
+        <SupporterImage
+          src="https://assets.hackclub.com/flag-standalone.png"
+          sx={{
+            bg: "white",
+          }}
+        />
+      </Flex>
+      <Heading as="h2" sx={{ mt: 4, px: 0 }}>
+        Financial Transparency
+      </Heading>
       <Box dangerouslySetInnerHTML={{ __html: html }} sx={{ mb: 3 }} />
       <style>
         {`
@@ -75,9 +154,9 @@ export default function Finances({ html }) {
 
 export async function getServerSideProps(ctx) {
   ctx.res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  )
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
   let html = await fetch(
     `https://bank.hackclub.com/the-innovation-circuit${
       ctx.query.page ? "?page=" + ctx.query.page : ""
@@ -154,6 +233,13 @@ export async function getServerSideProps(ctx) {
       }
       .list-badge{
         display: none!important;
+      }
+      .heading {
+        display: none!important;
+      }
+      .table-container{
+        margin-top: 8px!important;
+        margin-bottom: 4px!important;
       }
       input[type='submit'], .btn {
         margin-right: 4px;
