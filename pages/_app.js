@@ -1,38 +1,98 @@
 import "../styles/globals.css";
-import { ThemeProvider } from "theme-ui";
-import theme from "../lib/theme";
-import { Container, Box, Text } from "theme-ui";
+import theme from "@the-innovation-circuit/theme";
+import { Container, Box, ThemeProvider, Text } from "theme-ui";
+import BGImg from "../components/bg-img";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Footer from "../components/footer";
+
+const navRoutes = [
+  { path: "/", label: "Welcome Letter", mobileLabel: "Welcome" },
+  { path: "/photos", label: "Event Photos", mobileLabel: "Photos" },
+  { path: "/finances", label: "Donate", mobileLabel: "Donate" },
+];
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   return (
     <ThemeProvider theme={theme}>
-      <Container sx={{ maxWidth: "800px", py: "24px", px: "24px" }}>
-        <Component {...pageProps} />
-        <Box
-          columns={2}
-          sx={{ alignContent: "center", display: ["block", "flex"] }}
+      <Box
+        sx={{
+          height: "100vh",
+          overflow: "scroll",
+          zIndex: 1,
+          position: "relative",
+          py: 4,
+        }}
+      >
+        <Container
+          variant="copy"
+          sx={{
+            px: 4,
+            display: "flex",
+            color: "black",
+          }}
         >
-          <Text
-            as="p"
-            sx={{
-              fontSize: "12px",
-              verticalAlign: "text-bottom",
-              minWidth: ["100%", "1%"],
-            }}
-          >
-            Innovation Circuit is fiscally sponsored by The Hack Foundation.
-            Nonprofit EIN: 81-2908499.
-          </Text>
-          <Text
-            sx={{ fontSize: "12px", flexGrow: 1, textAlign: ["left", "right"], mt: [2, 0], transform: ['', 'translateY(-2px)'] }}
-            as="p"
-          >
-            <a href="https://vercel.com?utm_source=innovation-circuit&utm_campaign=oss" style={{ background: "#43326F", padding: "2px 6px" }}>
-              Powered by ▲ Vercel
-            </a>
-          </Text>
-        </Box>
-      </Container>
+          {navRoutes.map((route, index) => (
+            <Link href={route.path}>
+              <Box
+                sx={{
+                  backgroundColor: "#e8e0cc",
+                  backgroundImage:
+                    "url(https://www.transparenttextures.com/patterns/beige-paper.png)",
+                  px: "10px",
+                  pt: 1,
+                  cursor: "pointer",
+                  borderTopLeftRadius: index == 0 ? 6 : 0,
+                  borderTopRightRadius: index + 1 == navRoutes.length ? 6 : 0,
+                  ...(router.pathname != route.path
+                    ? {
+                        borderLeft: "0.3px solid black",
+                        boxShadow: 'inset 2px 2px -2px #000000',
+                        opacity: "0.6",
+                        "&:hover": { opacity: "0.8" },
+                      }
+                    : {}),
+                }}
+              >
+                <Text sx={{display: ['none', 'inline']}}>{route.label}</Text>
+                <Text sx={{display: [ 'inline', 'none']}}>{route.mobileLabel}</Text>
+              </Box>
+            </Link>
+          ))}
+        </Container>
+        <Container
+          variant="copy"
+          sx={{
+            backgroundColor: "#e8e0cc",
+            color: "black",
+            pt: 2,
+            pb: 2,
+            boxShadow: "card",
+            px: 4,
+            backgroundImage:
+              "url(https://www.transparenttextures.com/patterns/beige-paper.png)",
+            borderRadius: 6,
+          }}
+        >
+          <Component {...pageProps} />
+        </Container>
+        <Footer />
+      </Box>
+
+      <BGImg
+        gradient="linear-gradient(rgba(51, 37, 87,0.7), rgba(51, 37, 87,0.95))"
+        src="https://cloud-qmweg7d8y-hack-club-bot.vercel.app/0screenshot_2021-04-05_at_7.25.05_pm.png"
+      />
+      <style>{`img{object-fit: cover;}`}</style>
+      <style>
+        {`
+        body{
+          background: black!important;
+        }
+        `}
+      </style>
+      
     </ThemeProvider>
   );
 }

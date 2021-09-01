@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Container, Heading, Grid, Text } from "theme-ui";
-
+import { Container, Heading, Grid, Text, Flex, Box, Image } from "theme-ui";
+import BGImg from "../components/bg-img";
 export default function Home() {
   return (
     <div>
@@ -35,43 +34,23 @@ export default function Home() {
         />
       </Head>
 
-      <Grid gap={2} columns={[2, null, 4]}>
-        <Image
-          width={200}
-          height={150}
-          src="https://cloud-okol6b1vm-hack-club-bot.vercel.app/0gems_innovation_week-2763-min.jpg"
-        />
-        <Image
-          width={200}
-          height={150}
-          src="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
-        />
-        <Image
-          width={200}
-          height={150}
-          src="https://cloud-okol6b1vm-hack-club-bot.vercel.app/2gems_innovation_week-2754-min.jpg"
-        />
-        <Image
-          width={200}
-          height={150}
-          src="https://cloud-okol6b1vm-hack-club-bot.vercel.app/3gems_innovation_week-2869-min.jpg"
-        />
-      </Grid>
-      <Heading
-        as="h1"
-        sx={{
-          backgroundColor: "#fff",
-          color: "#674ea7ff",
-          width: "calc(100% + 36px)",
-          textAlign: "left",
-          fontSize: ["2.5em", "3em", "3em"],
-          margin: "auto",
-          marginTop: "18px",
-          py: "4px",
-          px: "16px",
-          ml: "-18px",
-        }}
-      >
+      <Flex sx={{ alignItems: "center" }}>
+        <Box sx={{ fontWeight: 500 }}>
+          The Students <br /> Secondary Schools <br />
+          Singapore, Singapore
+        </Box>
+        <Box sx={{ height: "100px", textAlign: "right", flexGrow: 1 }}>
+          <Image
+            sx={{
+              height: "100px",
+              textAlign: "right",
+              transform: "rotate(5deg)",
+            }}
+            src="https://64.media.tumblr.com/f0981c0b994397888fa9fba9666f10e3/93cd35f1c41d3b53-9e/s400x600/04609cac07560fdcd0bfe8f5e80a6c53244df608.png"
+          />
+        </Box>
+      </Flex>
+      <Heading as="h1" sx={{ maxWidth: "70%" }}>
         Introducing the Innovation Circuit
       </Heading>
       <Text as="p" sx={{ fontSize: "18px", mt: "16px" }}>
@@ -104,31 +83,47 @@ export default function Home() {
         <p>
           <img
             src="https://cloud-aukgm77yx-hack-club-bot.vercel.app/0signature-2.png"
-            style={{ height: "32px", padding: "4px", paddingLeft: "0px" }}
+            style={{
+              height: "32px",
+              padding: "4px",
+              paddingLeft: "0px",
+              filter: "invert(100%) grayscale(100%)",
+            }}
           />
           <img
             src="https://cloud-9tgpem2k5-hack-club-bot.vercel.app/0signature-5.png"
-            style={{ height: "32px", padding: "4px" }}
+            style={{
+              height: "32px",
+              padding: "4px",
+              filter: "invert(100%) grayscale(100%)",
+            }}
           />
           <img
             src="https://cloud-7tu95437y-hack-club-bot.vercel.app/0signature-4.png"
-            style={{ height: "32px", padding: "4px" }}
+            style={{
+              height: "32px",
+              padding: "4px",
+              filter: "invert(100%) grayscale(100%)",
+            }}
           />
           <img
             src="https://cloud-8tu0c4v3c-hack-club-bot.vercel.app/0signature-3.png"
-            style={{ height: "32px", padding: "4px" }}
+            style={{
+              height: "32px",
+              padding: "4px",
+              filter: "invert(100%) grayscale(100%)",
+            }}
           />
           <img
             src="https://cloud-6pnj6p6hv-hack-club-bot.vercel.app/0signature.png"
-            style={{ height: "32px", padding: "4px" }}
+            style={{
+              height: "32px",
+              padding: "4px",
+              filter: "invert(100%) grayscale(100%)",
+            }}
           />
-
-          <br />
-          
         </p>
       </Text>
-
-      <style>{`img{object-fit: cover;}`}</style>
     </div>
   );
 }

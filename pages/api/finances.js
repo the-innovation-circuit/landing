@@ -6,7 +6,6 @@ export default async (req, res) => {
       req.query.page ? "?page=" + req.query.page : ""
     }`
   ).then((r) => r.text());
-  console.log(html);
   html = html.replace(
     `<h1 class="flex items-center">
   Financials
@@ -49,9 +48,13 @@ export default async (req, res) => {
       .container{
         grid-template-columns: 1fr!important;
         max-width: 800px!important;
+        padding: 0rem!important;
       }
       a{
-        color: white!important;
+        color: black!important;
+      }
+      .muted{
+        color: black!important;
       }
       .transparency-banner{
         display: none!important;
@@ -107,30 +110,26 @@ export default async (req, res) => {
             .app__content h1:first-child {
               box-sizing: border-box;
               margin: 0;
-              
               min-width: 0;
               font-family: inherit;
               font-weight: heading;
               line-height: heading;
-              background-color: #fff;
-              color: #674ea7ff;
-              width: calc(100% + 36px);
               text-align: left;
-              font-size: 48px;
+              font-size: 36px;
               margin: auto;
-              margin-top: 18px;
+              margin-top: 12px!important;
               padding-top: 4px;
               padding-bottom: 4px;
-              padding-left: 16px;
-              padding-right: 16px;
-              margin-left: -18px;
-              margin-bottom: 18px;
+              margin-bottom: 12px!important;
+              border-bottom: none;
+              padding-left: 0px!important;
             }
       
       body{
         font-family: 'Fira Sans', sans-serif!important;
-        color: white!important;
-        background: #674ea7ff!important;
+        color: black!important;
+        background-color: #e8e0cc!important;
+        background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png")!important;
       }
       h1, h2, h3, .heading, .stat__value, .brand-sans {
         font-family: 'Fira Sans', sans-serif!important;

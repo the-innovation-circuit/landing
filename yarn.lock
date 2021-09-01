@@ -362,6 +362,11 @@
     "@styled-system/core" "^5.1.2"
     "@styled-system/css" "^5.1.5"
 
+"@the-innovation-circuit/theme@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@the-innovation-circuit/theme/-/theme-0.3.3.tgz#963e23b88685e571902cca769b5d13c891031ce1"
+  integrity sha512-PTRs5qNfz6MaZedxp3HyOj3r6tdS4x/2r/aCChHrxQ+CgYYt8VSX+ctIqzTLK8+sAIce8bc8gvjcNWxy03wfZA==
+
 "@theme-ui/color-modes@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@theme-ui/color-modes/-/color-modes-0.6.0.tgz#bf90bef2fca72e5af6b4ac54dd0001117592357d"
