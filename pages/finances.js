@@ -63,7 +63,7 @@ export default function Finances({ html }) {
           content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
         />
       </Head>
-      <Heading sx={{ mt: 3, px: '0px' }}>Support the Innovation Circuit</Heading>
+      <Heading sx={{ mt: 3, px: '0px', pb: 0 }}>Support the Innovation Circuit</Heading>
       <Text as="p" sx={{ mt: "8px" }}>
         To provide students in Singapore the best first exposure to STEM &
         computer science, we rely on the kind donations of companies and

@@ -3,7 +3,7 @@ import { Box, Text, Link } from "theme-ui";
 export default function Footer() {
   return (
     <Box
-      sx={{ alignContent: "center", display: "block", color: 'white', textAlign: 'center', mt: 3 }}
+      sx={{ alignContent: "center", display: "block", color: 'white', textAlign: 'center', mt: 3, px: 4}}
     >
       <Text
         as="p"

@@ -1,15 +1,15 @@
 import "../styles/globals.css";
 import theme from "@the-innovation-circuit/theme";
-import { Container, Box, ThemeProvider } from "theme-ui";
+import { Container, Box, ThemeProvider, Text } from "theme-ui";
 import BGImg from "../components/bg-img";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Footer from "../components/footer";
 
 const navRoutes = [
-  { path: "/", label: "Welcome Letter" },
-  { path: "/photos", label: "Event Photos" },
-  { path: "/finances", label: "Donate" },
+  { path: "/", label: "Welcome Letter", mobileLabel: "Welcome" },
+  { path: "/photos", label: "Event Photos", mobileLabel: "Photos" },
+  { path: "/finances", label: "Donate", mobileLabel: "Donate" },
 ];
 
 function MyApp({ Component, pageProps }) {
@@ -55,7 +55,8 @@ function MyApp({ Component, pageProps }) {
                     : {}),
                 }}
               >
-                {route.label}
+                <Text sx={{display: ['none', 'inline']}}>{route.label}</Text>
+                <Text sx={{display: [ 'inline', 'none']}}>{route.mobileLabel}</Text>
               </Box>
             </Link>
           ))}
