@@ -82,7 +82,7 @@ function MyApp({ Component, pageProps }) {
 
       <BGImg
         gradient="linear-gradient(rgba(51, 37, 87,0.7), rgba(51, 37, 87,0.95))"
-        src="https://cloud-okol6b1vm-hack-club-bot.vercel.app/0gems_innovation_week-2763-min.jpg"
+        src="https://cloud-qmweg7d8y-hack-club-bot.vercel.app/0screenshot_2021-04-05_at_7.25.05_pm.png"
       />
       <style>{`img{object-fit: cover;}`}</style>
       <style>
