@@ -51,7 +51,7 @@ export default function Home() {
         </Box>
       </Flex>
       <Heading as="h1" sx={{ maxWidth: "70%" }}>
-        An Invitation to Bring the Innovation Circuit to Your School
+        Introducing the Innovation Circuit
       </Heading>
       <Text as="p" sx={{ fontSize: "18px", mt: "16px" }}>
         For two years now, we've been running an "Innovation Week" at our
