@@ -28,7 +28,7 @@ export default function Footer() {
       >
         <Link
           href="https://vercel.com?utm_source=innovation-circuit&utm_campaign=oss"
-          sx={{ background: "#e8e0cc", backgroundImage:
+          sx={{ background: " #DEDEFF", backgroundImage:
           "url(https://www.transparenttextures.com/patterns/beige-paper.png)", padding: "4px 8px", color: "black", textDecoration: 'none', borderRadius: 2 }}
         >
           Powered by ▲ Vercel

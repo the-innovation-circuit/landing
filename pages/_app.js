@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
             <Link href={route.path}>
               <Box
                 sx={{
-                  backgroundColor: "#e8e0cc",
+                  backgroundColor: "#DEDEFF",
                   backgroundImage:
                     "url(https://www.transparenttextures.com/patterns/beige-paper.png)",
                   px: "10px",
@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
         <Container
           variant="copy"
           sx={{
-            backgroundColor: "#e8e0cc",
+            backgroundColor: "#DEDEFF",
             color: "black",
             pt: 2,
             pb: 2,
