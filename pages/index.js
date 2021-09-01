@@ -69,13 +69,13 @@ export default function Home() {
         We're now in the process of establishing the Innovation Circuit, which
         in essence is a touring Innovation Week. We'll be taking the
         fundamentals of Innovation Week and building them into an afternoon
-        event that we can deliver at schools (starting in Singapore & Southern
-        Malaysia). All schools will need to provide is a large indoor space and
+        event that we can deliver at schools (starting in Singapore). All 
+        schools will need to provide is a large indoor space and
         we'll handle the rest.
         <br />
         <br />
         If this interests you, we'd love to meet you! Specifically, we're
-        interested in discussing with teachers who'd like to bring the program
+        interested in discussing with student leadership groups who'd like to bring the program
         to their school. Please contact us at contact@innovationcircuit.co.
         <br />
         <br />
