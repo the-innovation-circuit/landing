@@ -10,13 +10,13 @@ export default function Home() {
         <meta name="title" content="The Innovation Circuit" />
         <meta
           name="description"
-          content="Bringing STEM resources to the students that need them."
+          content="Bringing STEM resources to the students across Singapore."
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="The Innovation Circuit" />
         <meta
           property="og:description"
-          content="Bringing STEM resources to the students that need them."
+          content="Bringing STEM resources to the students across Singapore."
         />
         <meta
           property="og:image"
@@ -26,7 +26,7 @@ export default function Home() {
         <meta property="twitter:title" content="The Innovation Circuit" />
         <meta
           property="twitter:description"
-          content="Bringing STEM resources to the students that need them."
+          content="Bringing STEM resources to the students across Singapore."
         />
         <meta
           property="twitter:image"
