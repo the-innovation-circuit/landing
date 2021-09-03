@@ -11,23 +11,25 @@ import {
 } from "theme-ui";
 import BGImg from "../components/bg-img";
 
-function SupporterImage({ src, sx, ...props }) {
+function SupporterImage({ src, href, sx, ...props }) {
   return (
-    <Image
-      src={src}
-      sx={{
-        height: "50px",
-        minWidth: '1px',
-        maxWidth: 'none',
-        bg: "white",
-        p: "6px",
-        borderRadius: 6,
-        mr: 2,
-        mt: 2,
-        ...sx,
-      }}
-      {...props}
-    />
+    <Link href={href}>
+      <Image
+        src={src}
+        sx={{
+          height: "50px",
+          minWidth: '1px',
+          maxWidth: 'none',
+          bg: "white",
+          p: "6px",
+          borderRadius: 6,
+          mr: 2,
+          mt: 2,
+          ...sx,
+        }}
+        {...props}
+      />
+    </Link>
   );
 }
 
@@ -106,12 +108,14 @@ export default function Finances({ html }) {
       <Flex sx={{flexWrap: 'wrap'}}>
         <SupporterImage
           src="https://www.ibo.org/Assets/Images/logo-163.svg"
+          href="https://www.ibo.org"
           sx={{
             bg: "white",
           }}
         />
         <SupporterImage
           src="https://www.finsmes.com/wp-content/uploads/2020/04/vercel.png"
+          href="https://vercel.com"
           sx={{
             bg: "snow",
             filter: 'invert(100%)'
@@ -119,6 +123,7 @@ export default function Finances({ html }) {
         />
         <SupporterImage
           src="https://scontent.fsin9-1.fna.fbcdn.net/v/t1.18169-9/cp0/e15/q65/p320x320/539226_10151006077389794_1622377941_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7aed08&_nc_ohc=g9UkemISGl0AX9BmHVv&_nc_ht=scontent.fsin9-1.fna&oh=d10d2581735db582885999f571aa1b0a&oe=61531E63"
+          href="https://www.ashoka.org/en-sg"
           sx={{
             bg: "#F46523",
             p: '1px'
@@ -126,14 +131,23 @@ export default function Finances({ html }) {
         />
         <SupporterImage
           src="https://upload.wikimedia.org/wikipedia/commons/0/02/Github.com-SunghanKim.png"
+          href="https://education.github.com"
           sx={{
             bg: "black",
           }}
         />
         <SupporterImage
           src="https://assets.hackclub.com/flag-standalone.png"
+          href="https://hackclub.com"
           sx={{
             bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://www.stickermule.com/about/_next/static/public/logo.cf620062b17ccd7b1f88688e749fea10.svg"
+          href="https://stickermule.com"
+          sx={{
+            bg: "#4e2817",
           }}
         />
       </Flex>
