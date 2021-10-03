@@ -122,11 +122,11 @@ export default function Finances({ html }) {
           }}
         />
         <SupporterImage
-          src="https://scontent.fsin9-1.fna.fbcdn.net/v/t1.18169-9/cp0/e15/q65/p320x320/539226_10151006077389794_1622377941_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7aed08&_nc_ohc=g9UkemISGl0AX9BmHVv&_nc_ht=scontent.fsin9-1.fna&oh=d10d2581735db582885999f571aa1b0a&oe=61531E63"
+          src="https://www.ashoka.org/themes/custom/blanco_ashoka_org/logo.svg"
           href="https://www.ashoka.org/en-sg"
           sx={{
             bg: "#F46523",
-            p: '1px'
+            p: '6px'
           }}
         />
         <SupporterImage
