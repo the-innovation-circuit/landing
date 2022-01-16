@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Container, Heading, Grid, Text, Flex, Box, Image } from "theme-ui";
+import { Container, Heading, Grid, Text, Flex, Box, Image, Link } from "theme-ui";
 import BGImg from "../components/bg-img";
 export default function Home() {
   return (
@@ -70,7 +70,7 @@ export default function Home() {
         will establish APAC-wide programs that bring elements of Innovation Week 
         to a larger audience. Our first program is the Innovation Challenge, an
         entrepreneurship challenge for secondary students. 
-        <a href="https://innovation-challenge.co/">You can join it here.</a>
+        <Link href="https://innovation-challenge.co/">You can join it here.</Link>
         <br />
         <br />
         If this interests you, we'd love to meet you! Specifically, we're
