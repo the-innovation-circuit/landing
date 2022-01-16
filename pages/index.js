@@ -70,7 +70,7 @@ export default function Home() {
         will establish APAC-wide programs that bring elements of Innovation Week 
         to a larger audience. Our first program is the Innovation Challenge, an
         entrepreneurship challenge for secondary students. 
-        <Link href="https://innovation-challenge.co/">You can join it here.</Link>
+        <Link href="https://innovation-challenge.co/"> You can join it here.</Link>
         <br />
         <br />
         If this interests you, we'd love to meet you! Specifically, we're
