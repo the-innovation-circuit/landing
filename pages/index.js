@@ -1,5 +1,14 @@
 import Head from "next/head";
-import { Container, Heading, Grid, Text, Flex, Box, Image, Link } from "theme-ui";
+import {
+  Container,
+  Heading,
+  Grid,
+  Text,
+  Flex,
+  Box,
+  Image,
+  Link,
+} from "theme-ui";
 import BGImg from "../components/bg-img";
 export default function Home() {
   return (
@@ -67,15 +76,21 @@ export default function Home() {
         <br />
         <br />
         We're now in the process of establishing the Innovation Circuit, which
-        will establish APAC-wide programs that bring elements of Innovation Week 
+        will establish APAC-wide programs that bring elements of Innovation Week
         to a larger audience. Our first program is the Innovation Challenge, an
         entrepreneurship challenge for secondary students.{" "}
-        <Link href="https://innovation-challenge.co/">You can join it here.</Link>
+        <Link href="https://innovation-challenge.co/">
+          You can join it here.
+        </Link>
         <br />
         <br />
         If this interests you, we'd love to meet you! Specifically, we're
-        interested in discussing with student leadership groups who'd like to work with us
-        in their schools. Please contact us at contact@innovationcircuit.co.
+        interested in discussing with student leadership groups who'd like to
+        work with us in their schools. Please contact us at{" "}
+        <Link href="mailto:contact@innovationcircuit.co">
+          contact@innovationcircuit.co
+        </Link>
+        .
         <br />
         <br />
         Looking forward,
