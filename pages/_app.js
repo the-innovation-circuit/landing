@@ -5,6 +5,7 @@ import BGImg from "../components/bg-img";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Footer from "../components/footer";
+import Script from "next/script";
 
 const navRoutes = [
   { path: "/", label: "Welcome Letter", mobileLabel: "Welcome" },
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <ThemeProvider theme={theme}>
+      <Script async defer data-website-id="0f173a7a-2459-45b6-a6e4-0f8c02bd196f" src="https://analytics.sampoder.com/umami.js" />
       <Box
         sx={{
           height: "100vh",
