@@ -19,13 +19,13 @@ export default function Home() {
         <meta name="title" content="The Innovation Circuit" />
         <meta
           name="description"
-          content="Bringing STEM resources to the students across Singapore."
+          content="Innovation Circuit supports & runs amazing STEM events in APAC."
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="The Innovation Circuit" />
         <meta
           property="og:description"
-          content="Bringing STEM resources to the students across Singapore."
+          content="Innovation Circuit supports & runs amazing STEM events in APAC."
         />
         <meta
           property="og:image"
