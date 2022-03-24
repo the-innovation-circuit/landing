@@ -164,6 +164,7 @@ export default function Finances({ html }) {
           href="https://ezsy.com/"
           sx={{
             bg: "white",
+            p: "0px"
           }}
         />
         <SupporterImage
