@@ -345,6 +345,9 @@ export async function getServerSideProps(ctx) {
           font-size: 1.5rem;
           vertical-align: baseline!important;
         }
+        .stat--small {
+          display: none!important;
+        }
     </style>
     <head><meta charset='utf-8'>`
   );
