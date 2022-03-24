@@ -114,6 +114,14 @@ export default function Finances({ html }) {
           }}
         />
         <SupporterImage
+          src="https://www.ashoka.org/themes/custom/blanco_ashoka_org/logo.svg"
+          href="https://www.ashoka.org/en-sg"
+          sx={{
+            bg: "#F46523",
+            p: '6px'
+          }}
+        />
+        <SupporterImage
           src="https://www.finsmes.com/wp-content/uploads/2020/04/vercel.png"
           href="https://vercel.com"
           sx={{
@@ -126,15 +134,15 @@ export default function Finances({ html }) {
           href="https://replit.com"
           sx={{
             bg: "black",
-            px: '4px'
+            px: '12px'
           }}
         />
         <SupporterImage
-          src="https://www.ashoka.org/themes/custom/blanco_ashoka_org/logo.svg"
-          href="https://www.ashoka.org/en-sg"
+          src="https://logos-download.com/wp-content/uploads/2019/07/Twilio_Logo.png"
+          href="https://twilio.com"
           sx={{
-            bg: "#F46523",
-            p: '6px'
+            bg: "white",
+            px: '12px'
           }}
         />
         <SupporterImage
