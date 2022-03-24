@@ -103,7 +103,7 @@ export default function Finances({ html }) {
         .
       </Text>
       <Heading as="h3" sx={{ mt: 3, px: 0 }}>
-        Thanks to these kind supporters
+        Thank you to our kind supporters
       </Heading>
       <Flex sx={{flexWrap: 'wrap'}}>
         <SupporterImage
@@ -155,6 +155,27 @@ export default function Finances({ html }) {
         <SupporterImage
           src="https://assets.hackclub.com/flag-standalone.png"
           href="https://hackclub.com"
+          sx={{
+            bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://ezsy.com/wp-content/uploads/2020/12/cropped-Ezsy-Final-01.png"
+          href="https://ezsy.com/"
+          sx={{
+            bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://static.wixstatic.com/media/998f29_3d263ce2f09b410abef0a41c501247e5~mv2.png/v1/fill/w_356,h_96,al_c,usm_0.66_1.00_0.01/ASEAN%20FINTECH%20GRP%20LOGO.png"
+          href="https://www.aseanfintechgroup.com/"
+          sx={{
+            bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://www.midasacademy.com.sg/wp-content/uploads/2021/11/midas.png"
+          href="https://www.midasacademy.com.sg/"
           sx={{
             bg: "white",
           }}
