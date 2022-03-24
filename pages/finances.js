@@ -122,6 +122,14 @@ export default function Finances({ html }) {
           }}
         />
         <SupporterImage
+          src="https://blog.replit.com/images/logo-dark.png"
+          href="https://replit.com"
+          sx={{
+            bg: "black",
+            px: '4px'
+          }}
+        />
+        <SupporterImage
           src="https://www.ashoka.org/themes/custom/blanco_ashoka_org/logo.svg"
           href="https://www.ashoka.org/en-sg"
           sx={{
