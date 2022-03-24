@@ -103,7 +103,7 @@ export default function Finances({ html }) {
         .
       </Text>
       <Heading as="h3" sx={{ mt: 3, px: 0 }}>
-        Thank you to our kind supporters
+        Thank you to our kind supporters and partners
       </Heading>
       <Flex sx={{flexWrap: 'wrap'}}>
         <SupporterImage
@@ -157,6 +157,13 @@ export default function Finances({ html }) {
           href="https://hackclub.com"
           sx={{
             bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/CodeDay_Logo.svg/2880px-CodeDay_Logo.svg.png"
+          href="https://codeday.org/"
+          sx={{
+            bg: "white"
           }}
         />
         <SupporterImage
