@@ -87,8 +87,8 @@ export default function Home() {
         If this interests you, we'd love to meet you! Specifically, we're
         interested in discussing with student leadership groups who'd like to
         work with us in their schools. Please contact us at{" "}
-        <Link href="mailto:contact@innovationcircuit.co">
-          contact@innovationcircuit.co
+        <Link href="mailto:contact@innovationcircuit.com">
+          contact@innovationcircuit.com
         </Link>
         .
         <br />
