@@ -89,7 +89,7 @@ export default function Home() {
         work with us in their schools. Please contact us at{" "}
         <Link href="mailto:contact@innovationcircuit.co">
           contact@innovationcircuit.co
-        </Link>
+        </Link> or through <Link href="https://www.instagram.com/innovationcircuit/">Instagram</Link>.
         .
         <br />
         <br />
