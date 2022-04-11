@@ -1,5 +1,5 @@
-import { Box } from 'theme-ui'
-import Image from 'next/image'
+import { Box } from "theme-ui";
+import Image from "next/image";
 
 /*
  * Use this component inside a container with CSS:
@@ -9,34 +9,34 @@ import Image from 'next/image'
  */
 
 const BGImg = ({
-  gradient = 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5))',
+  gradient = "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5))",
   ...props
 }) => (
   <Box
     sx={{
-      position: 'absolute',
-      display: 'block',
+      position: "absolute",
+      display: "block",
       top: 0,
       left: 0,
       right: 0,
       bottom: 0,
       zIndex: 0,
-      '&:after': {
+      "&:after": {
         content: '""',
-        position: 'absolute',
+        position: "absolute",
         backgroundImage: gradient,
         top: 0,
         left: 0,
         right: 0,
-        bottom: 0
+        bottom: 0,
       },
-      '> div': { height: '100%', width: '100%' },
-      img: { objectFit: 'cover', objectPosition: 'center' },
-      '~ *': { position: 'relative' }
+      "> div": { height: "100%", width: "100%" },
+      img: { objectFit: "cover", objectPosition: "center" },
+      "~ *": { position: "relative" },
     }}
   >
     <Image layout="fill" {...props} />
   </Box>
-)
+);
 
-export default BGImg
+export default BGImg;

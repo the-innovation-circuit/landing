@@ -18,8 +18,8 @@ function SupporterImage({ src, href, sx, ...props }) {
         src={src}
         sx={{
           height: "50px",
-          minWidth: '1px',
-          maxWidth: 'none',
+          minWidth: "1px",
+          maxWidth: "none",
           bg: "white",
           p: "6px",
           borderRadius: 6,
@@ -55,7 +55,10 @@ export default function Finances({ html }) {
           content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Donate to the Innovation Circuit" />
+        <meta
+          property="twitter:title"
+          content="Donate to the Innovation Circuit"
+        />
         <meta
           property="twitter:description"
           content="Help us bring STEM resources to the students that need them in Singapore."
@@ -65,7 +68,9 @@ export default function Finances({ html }) {
           content="https://cloud-okol6b1vm-hack-club-bot.vercel.app/1gems_innovation_week-2831-min.jpg"
         />
       </Head>
-      <Heading sx={{ mt: 3, px: '0px', pb: 0 }}>Support the Innovation Circuit</Heading>
+      <Heading sx={{ mt: 3, px: "0px", pb: 0 }}>
+        Support the Innovation Circuit
+      </Heading>
       <Text as="p" sx={{ mt: "8px" }}>
         To provide students in Singapore the best first exposure to STEM &
         computer science, we rely on the kind donations of companies and
@@ -105,7 +110,7 @@ export default function Finances({ html }) {
       <Heading as="h3" sx={{ mt: 3, px: 0 }}>
         Thank you to our kind supporters and partners
       </Heading>
-      <Flex sx={{flexWrap: 'wrap'}}>
+      <Flex sx={{ flexWrap: "wrap" }}>
         <SupporterImage
           src="https://www.ibo.org/Assets/Images/logo-163.svg"
           href="https://www.ibo.org"
@@ -118,7 +123,7 @@ export default function Finances({ html }) {
           href="https://www.ashoka.org/en-sg"
           sx={{
             bg: "#F46523",
-            p: '6px'
+            p: "6px",
           }}
         />
         <SupporterImage
@@ -126,7 +131,7 @@ export default function Finances({ html }) {
           href="https://vercel.com"
           sx={{
             bg: "snow",
-            filter: 'invert(100%)'
+            filter: "invert(100%)",
           }}
         />
         <SupporterImage
@@ -134,7 +139,7 @@ export default function Finances({ html }) {
           href="https://replit.com"
           sx={{
             bg: "black",
-            px: '12px'
+            px: "12px",
           }}
         />
         <SupporterImage
@@ -142,7 +147,7 @@ export default function Finances({ html }) {
           href="https://twilio.com"
           sx={{
             bg: "white",
-            px: '12px'
+            px: "12px",
           }}
         />
         <SupporterImage
@@ -163,7 +168,7 @@ export default function Finances({ html }) {
           src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/CodeDay_Logo.svg/2880px-CodeDay_Logo.svg.png"
           href="https://codeday.org/"
           sx={{
-            bg: "white"
+            bg: "white",
           }}
         />
         <SupporterImage
@@ -171,7 +176,7 @@ export default function Finances({ html }) {
           href="https://ezsy.com/"
           sx={{
             bg: "white",
-            p: "0px"
+            p: "0px",
           }}
         />
         <SupporterImage
@@ -239,18 +244,12 @@ export async function getServerSideProps(ctx) {
     new RegExp("/the-innovation-circuit?page=", "g"),
     "/finances?page="
   );
-  html = html.replace(
-    new RegExp("<meta", "g"),
-    "<heta"
-  );
+  html = html.replace(new RegExp("<meta", "g"), "<heta");
   html = html.replace(
     new RegExp("<title", "g"),
     "<hitle style='display: none'"
   );
-  html = html.replace(
-    new RegExp("</title", "g"),
-    "</hitle"
-  );
+  html = html.replace(new RegExp("</title", "g"), "</hitle");
   html = html.replace(
     new RegExp("/the-innovation-circuit?page=", "g"),
     "/finances?page="

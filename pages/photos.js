@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Container, Heading, Grid, Text, Box } from "theme-ui";
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -45,8 +45,10 @@ export default function Home() {
             content="https://cloud-qmweg7d8y-hack-club-bot.vercel.app/2screenshot_2021-04-05_at_7.23.57_pm.png"
           />
         </Head>
-        <Heading sx={{ mt: 3, px: '0px', fontSize: '1.75rem' }}>Photos of the Innovation Circuit</Heading>
-        <Text as="p" sx={{  mt: "8px", mb: '8px' }}>
+        <Heading sx={{ mt: 3, px: "0px", fontSize: "1.75rem" }}>
+          Photos of the Innovation Circuit
+        </Heading>
+        <Text as="p" sx={{ mt: "8px", mb: "8px" }}>
           It's hard for us to put the vibe of an Innovation Circuit event in
           words, so here are some photos from Innovation Week (the predecessor
           to the Innovation Circuit) that capture the atmosphere of an

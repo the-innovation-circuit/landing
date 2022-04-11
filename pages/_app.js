@@ -18,7 +18,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <script async defer data-website-id="0f173a7a-2459-45b6-a6e4-0f8c02bd196f" src="https://analytics.sampoder.com/umami.js" />
+        <script
+          async
+          defer
+          data-website-id="0f173a7a-2459-45b6-a6e4-0f8c02bd196f"
+          src="https://analytics.sampoder.com/umami.js"
+        />
       </Head>
       <Box
         sx={{
@@ -52,15 +57,17 @@ function MyApp({ Component, pageProps }) {
                   ...(router.pathname != route.path
                     ? {
                         borderLeft: "0.3px solid black",
-                        boxShadow: 'inset 2px 2px -2px #000000',
+                        boxShadow: "inset 2px 2px -2px #000000",
                         opacity: "0.6",
                         "&:hover": { opacity: "0.8" },
                       }
                     : {}),
                 }}
               >
-                <Text sx={{display: ['none', 'inline']}}>{route.label}</Text>
-                <Text sx={{display: [ 'inline', 'none']}}>{route.mobileLabel}</Text>
+                <Text sx={{ display: ["none", "inline"] }}>{route.label}</Text>
+                <Text sx={{ display: ["inline", "none"] }}>
+                  {route.mobileLabel}
+                </Text>
               </Box>
             </Link>
           ))}
@@ -96,7 +103,6 @@ function MyApp({ Component, pageProps }) {
         }
         `}
       </style>
-      
     </ThemeProvider>
   );
 }
