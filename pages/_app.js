@@ -3,6 +3,7 @@ import theme from "@the-innovation-circuit/theme";
 import { Container, Box, ThemeProvider, Text } from "theme-ui";
 import BGImg from "../components/bg-img";
 import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import Footer from "../components/footer";
 
@@ -16,6 +17,9 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <script async defer data-website-id="0f173a7a-2459-45b6-a6e4-0f8c02bd196f" src="https://analytics.sampoder.com/umami.js" />
+      </Head>
       <Box
         sx={{
           height: "100vh",

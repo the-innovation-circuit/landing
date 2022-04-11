@@ -103,7 +103,7 @@ export default function Finances({ html }) {
         .
       </Text>
       <Heading as="h3" sx={{ mt: 3, px: 0 }}>
-        Thanks to these kind supporters
+        Thank you to our kind supporters and partners
       </Heading>
       <Flex sx={{flexWrap: 'wrap'}}>
         <SupporterImage
@@ -111,6 +111,14 @@ export default function Finances({ html }) {
           href="https://www.ibo.org"
           sx={{
             bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://www.ashoka.org/themes/custom/blanco_ashoka_org/logo.svg"
+          href="https://www.ashoka.org/en-sg"
+          sx={{
+            bg: "#F46523",
+            p: '6px'
           }}
         />
         <SupporterImage
@@ -122,11 +130,19 @@ export default function Finances({ html }) {
           }}
         />
         <SupporterImage
-          src="https://www.ashoka.org/themes/custom/blanco_ashoka_org/logo.svg"
-          href="https://www.ashoka.org/en-sg"
+          src="https://blog.replit.com/images/logo-dark.png"
+          href="https://replit.com"
           sx={{
-            bg: "#F46523",
-            p: '6px'
+            bg: "black",
+            px: '12px'
+          }}
+        />
+        <SupporterImage
+          src="https://logos-download.com/wp-content/uploads/2019/07/Twilio_Logo.png"
+          href="https://twilio.com"
+          sx={{
+            bg: "white",
+            px: '12px'
           }}
         />
         <SupporterImage
@@ -139,6 +155,35 @@ export default function Finances({ html }) {
         <SupporterImage
           src="https://assets.hackclub.com/flag-standalone.png"
           href="https://hackclub.com"
+          sx={{
+            bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/CodeDay_Logo.svg/2880px-CodeDay_Logo.svg.png"
+          href="https://codeday.org/"
+          sx={{
+            bg: "white"
+          }}
+        />
+        <SupporterImage
+          src="https://ezsy.com/wp-content/uploads/2020/12/cropped-Ezsy-Final-01.png"
+          href="https://ezsy.com/"
+          sx={{
+            bg: "white",
+            p: "0px"
+          }}
+        />
+        <SupporterImage
+          src="https://static.wixstatic.com/media/998f29_3d263ce2f09b410abef0a41c501247e5~mv2.png/v1/fill/w_356,h_96,al_c,usm_0.66_1.00_0.01/ASEAN%20FINTECH%20GRP%20LOGO.png"
+          href="https://www.aseanfintechgroup.com/"
+          sx={{
+            bg: "white",
+          }}
+        />
+        <SupporterImage
+          src="https://www.midasacademy.com.sg/wp-content/uploads/2021/11/midas.png"
+          href="https://www.midasacademy.com.sg/"
           sx={{
             bg: "white",
           }}
@@ -344,6 +389,9 @@ export async function getServerSideProps(ctx) {
           content: ''!important;
           font-size: 1.5rem;
           vertical-align: baseline!important;
+        }
+        .stat--small {
+          display: none!important;
         }
     </style>
     <head><meta charset='utf-8'>`

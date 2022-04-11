@@ -19,13 +19,13 @@ export default function Home() {
         <meta name="title" content="The Innovation Circuit" />
         <meta
           name="description"
-          content="Bringing STEM resources to the students across Singapore."
+          content="Innovation Circuit supports & runs amazing STEM events in APAC."
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="The Innovation Circuit" />
         <meta
           property="og:description"
-          content="Bringing STEM resources to the students across Singapore."
+          content="Innovation Circuit supports & runs amazing STEM events in APAC."
         />
         <meta
           property="og:image"
@@ -87,8 +87,8 @@ export default function Home() {
         If this interests you, we'd love to meet you! Specifically, we're
         interested in discussing with student leadership groups who'd like to
         work with us in their schools. Please contact us at{" "}
-        <Link href="mailto:contact@innovationcircuit.co">
-          contact@innovationcircuit.co
+        <Link href="mailto:contact@innovationcircuit.com">
+          contact@innovationcircuit.com
         </Link> or through <Link href="https://www.instagram.com/innovationcircuit/">Instagram</Link>.
         .
         <br />
