@@ -94,7 +94,7 @@ export default function Home() {
         <Link href="https://www.instagram.com/innovationcircuit/">
           Instagram
         </Link>
-        . .
+        .
         <br />
         <br />
         Looking forward,
