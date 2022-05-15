@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <script
           async
           defer
-          data-website-id="0f173a7a-2459-45b6-a6e4-0f8c02bd196f"
+          data-website-id="4c26ff94-3f91-4acc-97d1-92c72c98d9c2"
           src="https://analytics.sampoder.com/umami.js"
         />
       </Head>
