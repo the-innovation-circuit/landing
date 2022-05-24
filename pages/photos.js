@@ -50,9 +50,8 @@ export default function Home() {
         </Heading>
         <Text as="p" sx={{ mt: "8px", mb: "8px" }}>
           It's hard for us to put the vibe of an Innovation Circuit event in
-          words, so here are some photos from Innovation Week (the predecessor
-          to the Innovation Circuit) that capture the atmosphere of an
-          Innovation Circuit event best:
+          words, so here are some photos from Innovation Week (one of our events) 
+          that capture the atmosphere of an Innovation Circuit event best:
         </Text>
         <Grid gap={2} columns={[2, 3, 3]} sx={{ marginBottom: "18px" }}>
           <Image
