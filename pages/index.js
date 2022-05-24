@@ -78,9 +78,10 @@ export default function Home() {
         We're now established the Innovation Circuit, which
         is creating APAC-wide programs that bring elements of Innovation Week
         to a larger audience. So far, we've worked with three schools to deliver 
-        technology events for their students. We've also ran the 
-        <Link href="https://innovation-challenge.co/">Innovation Challenge</Link> 
-        and brought CodeDay to Singapore. Currently, we're running the 
+        technology events for their students. We've also ran the {" "}
+        <Link href="https://innovation-challenge.co/">Innovation Challenge</Link> {" "}
+        and {" "} <Link href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17">brought CodeDay to Singapore</Link>. 
+        Currently, we're running the  {" "}
         <Link href="https://jam.innovationcircuit.com">SG Game Jam</Link>.
         <br />
         <br />
