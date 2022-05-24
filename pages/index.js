@@ -75,13 +75,13 @@ export default function Home() {
         our school and support those who are not as fortunate as us.
         <br />
         <br />
-        We're now in the process of establishing the Innovation Circuit, which
-        will establish APAC-wide programs that bring elements of Innovation Week
-        to a larger audience. Our first program is the Innovation Challenge, an
-        entrepreneurship challenge for secondary students.{" "}
-        <Link href="https://innovation-challenge.co/">
-          You can join it here.
-        </Link>
+        We're now established the Innovation Circuit, which
+        is creating APAC-wide programs that bring elements of Innovation Week
+        to a larger audience. So far, we've worked with three schools to deliver 
+        technology events for their students. We've also ran the 
+        <Link href="https://innovation-challenge.co/">Innovation Challenge</Link> 
+        and brought CodeDay to Singapore. Currently, we're running the 
+        <Link href="https://jam.innovationcircuit.com">SG Game Jam</Link>.
         <br />
         <br />
         If this interests you, we'd love to meet you! Specifically, we're
