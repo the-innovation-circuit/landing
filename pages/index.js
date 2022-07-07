@@ -79,10 +79,9 @@ export default function Home() {
         is creating APAC-wide programs that bring elements of Innovation Week
         to a larger audience. So far, we've worked with three schools to deliver 
         technology events for their students. We've also ran the {" "}
-        <Link href="https://innovation-challenge.co/">Innovation Challenge</Link> {" "}
-        and {" "} <Link href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17">brought CodeDay to Singapore</Link>. 
-        Currently, we're running the  {" "}
-        <Link href="https://jam.innovationcircuit.com">SG Game Jam</Link>.
+        <Link href="https://innovation-challenge.co/">Innovation Challenge</Link>, <Link href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17">
+        brought CodeDay to Singapore</Link> and the <Link href="https://jam.innovationcircuit.com">SG Game Jam</Link>. 
+        Currently, we're preparing a large IRL hackathon in Singapore (stay tuned!).
         <br />
         <br />
         If this interests you, we'd love to meet you! Specifically, we're
