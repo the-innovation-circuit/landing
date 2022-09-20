@@ -45,7 +45,7 @@ export default function Home() {
 
       <Flex sx={{ alignItems: "center" }}>
         <Box sx={{ fontWeight: 500 }}>
-          The Students <br /> Secondary Schools <br />
+          Students <br /> Secondary Schools & JCs <br />
           Singapore, Singapore
         </Box>
         <Box sx={{ height: "100px", textAlign: "right", flexGrow: 1 }}>
