@@ -135,10 +135,10 @@ export default function Home() {
             }}
           />
         </p>
-        <br />
-        <br />
         <img src="https://cloud-mpc6a5iat-hack-club-bot.vercel.app/0screenshot_2022-09-20_at_10.32.37_pm.png" style={{maxWidth: '600px'}} />
-        <i>(Our slightly-awkward team photo!)</i>
+<br />        
+<i>(Our slightly-awkward team photo!)</i>
+<br />        
       </Text>
     </div>
   );
