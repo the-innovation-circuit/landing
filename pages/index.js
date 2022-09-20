@@ -64,15 +64,9 @@ export default function Home() {
       </Heading>
       <Text as="p" sx={{ fontSize: "18px", mt: "16px" }}>
         For two years now, we've been running an "Innovation Week" at our
-        school. Each Innovation Week brings together students from all walks of
-        life to engage with technology and maker culture. They do so through a
-        carefully crafted curriculum and series of activities that are made to
-        appeal to students.
-        <br />
-        <br />
-        As we reflect on the past two years we have concluded that we are in a
-        great position to do more. To have a genuine impact, we must go beyond
-        our school and support those who are not as fortunate as us.
+        school. Each Innovation Week brings together students to engage with 
+        technology and maker culture. However, we want to do more to spread 
+        maker culture in Singapore & APAC!
         <br />
         <br />
         We're now established the Innovation Circuit, which
@@ -141,6 +135,10 @@ export default function Home() {
             }}
           />
         </p>
+        <br />
+        <br />
+        <img src="https://cloud-mpc6a5iat-hack-club-bot.vercel.app/0screenshot_2022-09-20_at_10.32.37_pm.png" style={{maxWidth: '600px'}} />
+        <i>(Our slightly-awkward team photo!)</i>
       </Text>
     </div>
   );
