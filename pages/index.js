@@ -75,7 +75,7 @@ export default function Home() {
         technology events for their students. We've also ran the {" "}
         <Link href="https://innovation-challenge.co/">Innovation Challenge</Link>, <Link href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17">
         brought CodeDay to Singapore</Link> and the <Link href="https://jam.innovationcircuit.com">SG Game Jam</Link>. 
-        Currently, we're preparing a large IRL hackathon in Singapore (stay tuned!).
+        Currently, we're preparing a large IRL hackathon in Singapore: 🦁 <Link href="https://lioncityhacks.com">Lion City Hacks</Link>.
         <br />
         <br />
         If this interests you, we'd love to meet you! Specifically, we're
